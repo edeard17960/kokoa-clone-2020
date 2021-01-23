@@ -4,6 +4,6 @@ markdown은 서식이 있는 문자를 작성하는 것-->
 
 # kokoa clone 2020 update
 
-CSS got so much better!
+HTML and CSS are so much fun!
 
-<!--공유하고 싶다면 github desktop에 가서 이 파일명을 선택해주고 commit을 할건데 commit은 이 파일을 repository의 버전을  저장하는 시점이다. 타이틀은 꼭 써줘야함 >
+<!--공유하고 싶다면 github desktop에 가서 이 파일명을 선택해주고 commit을 할건데 commit은 이 파일을 repository의 버전을  저장하는 시점이다. 타이틀은 꼭 써줘야함 다하면 -> commit to master-> public branch >
