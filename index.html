@@ -1,0 +1,48 @@
+<!--index.html로 한 이유가 대부분의 웹사이트가 index.html을 찾아보도록 설정되있다.인덱스 뜻이 '첫번째'라는 뜻이다.-->
+<!--  !를 치면 요약된 코드가 나오는데 그거 엔터 ㄱ-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css"> <!--head 부분에 link:css를 치면 빠르게 css파일과 연동할 수 있다-->
+    <!--이때 href에 css파일의 경로를 써주면 된다.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to kokoa Talk</title>
+</head>
+<body>
+    <div class="status-bar">      <!--column이라는 클래스명은 너무 흔해서 다른걸로 해야지 안헷갈림-->
+        <div class="status-bar__column">
+         <span>NO Service</span> 
+         <i class="fas fa-wifi"></i><!--To Do: wifi icon--> <!--많은 아이콘을 가진 website -> heroicons 이거나 font awesome 걍 복사만 하면 됌-->
+        </div> 
+        <div class="status-bar__column">
+         <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+         <span>100%</span>
+         <i class="fas fa-battery-full"></i>
+         <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="welcome-header"> <!--이렇게 클래스명을 구체적으로 알려주면 css할때 편함-->
+        <h1 class="welcome-header__title">Welcome to KokoaClone</h1>
+        <p class="welcome-header__text">If you have a kokoa Account, log in with your email or phone number.</p>
+    </header>
+
+
+    <form id="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="password"/>
+        <input type="submit" value="Log In"/>
+    </form>
+
+    <a href="#">Find Kokoa Account of Password</a>
+
+    <script
+     src="https://kit.fontawesome.com/6f41cef959.js" 
+     crossorigin="anonymous">
+    </script>
+</body>
+</html>
+<!--브라우저에서 자동으로 body에 마진을 주는데 이런걸 빼줄 수 있는 코드가 있음 -> reset css치고 2.0들어간 담에 css에 코드 복사하면 된다-->
