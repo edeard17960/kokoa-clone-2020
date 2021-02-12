@@ -1,31 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import 'reset.css';
+/*reset.css 는 모든곳에 마진은 0으로 변환시켜주는 것인데 이렇게 하고 우리가 원하는 마진을 넣어주는게 편하다.*/
+/* 여기다 코드를 쓰면 복잡해서 다른 파일을 만들어주고 import를 통해 링크를 연결시킨다.*/
+@import 'variables.css';
+@import 'screen/login.css';
+@import 'components/status-bar.css';
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
 
-.status-bar {
-	display: flex;
-	justify-content: center;
-}
-
-.status-bar__column {
-	width: 33%;
-}
-
-.status-bar__column:first-child span {
-	margin-right: 5px;
-}
-
-.status-bar__column:nth-child(2) {
-	display: flex;
-	justify-content: center;
-}
-
-.status-bar__column:last-child {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-}
-.status-bar__column .fa-battery-full {
-	margin: 0px 5px;
-}
