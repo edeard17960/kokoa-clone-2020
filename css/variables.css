@@ -1,3 +1,7 @@
+/*반복적으로 쓰여서 자주쓰는것들은 여기다 쓰자.*/
 :root {
 	--yellow: #fae100;
+	--horizontal-space: 25px;
+	--main-border: 1px solid rgba(0, 0, 0, 0.2);
+	--gray-color: rgba(0, 0, 0, 0.5);
 }

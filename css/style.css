@@ -3,10 +3,29 @@
 /*reset.css 는 모든곳에 마진은 0으로 변환시켜주는 것인데 이렇게 하고 우리가 원하는 마진을 넣어주는게 편하다.*/
 /* 여기다 코드를 쓰면 복잡해서 다른 파일을 만들어주고 import를 통해 링크를 연결시킨다.*/
 @import 'variables.css';
-@import 'screen/login.css';
-@import 'components/status-bar.css';
 
+/* components*/
+@import 'components/status-bar.css';
+@import 'components/nav-bar.css';
+@import 'components/screen-header.css';
+@import 'components/user.component.css';
+@import 'components/badge.css';
+@import 'components/icon-row.css';
+@import 'components/alt-screen-header.css';
+@import 'components/no-mobile.css';
+
+/* screens*/
+@import 'screen/login.css';
+@import 'screen/friends.css';
+@import 'screen/find.css';
+@import 'screen/more.css';
+@import 'screen/settings.css';
+@import 'screen/chat_nav-bar.css';
+@import 'screen/chat.css';
 body {
+	color: #2e373d;
 	font-family: 'Open Sans', sans-serif;
 }
-
+.main-screen {
+	margin: 0px var(--horizontal-space);
+}

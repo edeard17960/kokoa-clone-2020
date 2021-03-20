@@ -1,42 +1,53 @@
-<!DOCTYPE html> <!-- '!'하고 엔터를 치면 저절로 나옴-->
+<!DOCTYPE html>
+<!-- '!'하고 엔터를 치면 저절로 나옴-->
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/style.css"/> <!--이건 html과 css의 링크를 연결시킨다는 의미이다.-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"/>
-    <title>Welcome to Kokoa Clone</title>
-</head>
-<body>
-    <div class="status-bar">
-        <div class="status-bar__column">
-            <span>NO Service</span>
-            <i class="fas fa-wifi"></i>
-        </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
+	<head>
+		<link rel="stylesheet" href="css/style.css" />
+		<!--이건 html과 css의 링크를 연결시킨다는 의미이다.-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+			integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+			crossorigin="anonymous"
+		/>
+		<title>Welcome to Kokoa Clone</title>
+	</head>
+	<body>
+		<div class="status-bar">
+			<div class="status-bar__column">
+				<span>NO Service</span>
+				<i class="fas fa-wifi"></i>
+			</div>
+			<div class="status-bar__column">
+				<span>18:43</span>
+			</div>
+			<div class="status-bar__column">
+				<span>110%</span>
+				<i class="fas fa-battery-full fa-lg"></i>
+				<!--fa-lg는 배터리 아이콘을 크게 해준다-->
+				<i class="fas fa-bolt"></i>
+			</div>
+		</div>
+		<!-- header은 block요소이다.-->
+		<header class="welcome-header">
+			<!--이렇게 클래스명을 구체적으로 알려주면 css할때 편함-->
+			<h1 class="welcome-header__title">Welcome to KokoaClone</h1>
+			<p class="welcome-header__text">
+				If you have a kokoa Account, log in with your email or phone number.
+			</p>
+		</header>
+		<!--action은 어떤 페이지로 데이터를 보낼건지 지정할 수 있다.-->
+		<form action="friends.html" method="GET" id="login-form">
+			<input name="username" type="text" placeholder="Email or phone number" />
+			<input name="password" type="password" placeholder="password" />
+			<input type="submit" value="Log In" />
+			<a href="#">Find Kokoa Account of Password</a>
+		</form>
 
-        </div>
-        <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-full fa-lg"></i> <!--fa-lg는 배터리 아이콘을 크게 해준다-->
-            <i class="fas fa-bolt"></i>
-        </div>
-
-    </div>
-    <!-- header은 block요소이다.-->
-    <header class="welcome-header"> <!--이렇게 클래스명을 구체적으로 알려주면 css할때 편함-->
-        <h1 class="welcome-header__title">Welcome to KokoaClone</h1>
-        <p class="welcome-header__text">If you have a kokoa Account, log in with your email or phone number.</p>
-    </header>
-    <!--action은 어떤 페이지로 데이터를 보낼건지 지정할 수 있다.-->
-    <form action="friends.html" method="GET" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number"/>
-        <input name="password" type="password" placeholder="password"/>
-        <input type="submit" value="Log In"/>
-        <a href="#">Find Kokoa Account of Password</a>
-    </form>
-
-    
-</body>
+		<div id="no-mobile">
+			<span>Your screen is too big ㅠㅠ</span>
+		</div>
+	</body>
 </html>
